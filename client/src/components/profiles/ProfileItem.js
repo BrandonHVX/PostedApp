@@ -26,18 +26,18 @@ const ProfileItem = ({
               {status} {company && <span> at {company}</span>}
             </p>
             {location && <span>{location}</span>}
-          </p>
-          {skills.slice(0, 4).map((skill, index) => (
-            <div key={index} className="text-primary">
-              <i className="fas fa-check" /> {skill}
-            </div>
-          ))}{' '}
+          </p>{' '}
           <div className="card-button">
             {' '}
             <Link to={`/profile/${_id}`} className="btn btn-primary">
               View Profile
             </Link>
           </div>
+          {skills.slice(0, 4).map((skill, index) => (
+            <div key={index} className="text-primary">
+              <i className="fas fa-check" /> {skill}
+            </div>
+          ))}{' '}
         </div>
       </div>
     </div>

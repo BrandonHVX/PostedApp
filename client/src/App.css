@@ -589,7 +589,6 @@ button {
   text-align: center;
   height: 600px;
   border: none;
-  z-index: -5;
 }
 .profile-card-3 .background-block {
   float: center;
@@ -692,4 +691,5 @@ button {
   bottom: 0;
   width: 100%;
   height: 50px;
+  z-index: 1000;
 }
