@@ -12,10 +12,10 @@ const ProfileItem = ({
   }
 }) => {
   return (
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div className="card profile-card-3">
         <div class="background-block">
-          <img src={avatar} className="round-img" />
+          <img src={avatar} className="pro-img" />
         </div>
         <div class="profile-thumb-block" />
         <div className="card-content">

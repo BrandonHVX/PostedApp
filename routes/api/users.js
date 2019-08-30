@@ -40,11 +40,16 @@ router.post(
           .json({ errors: [{ msg: 'User already exists' }] })
       }
 
-      const avatar = gravatar.url(email, {
-        s: '200',
-        r: 'pg',
-        d: 'mp'
-      })
+      const avatar = gravatar.url(
+        req.body.email,
+        {
+          s: '100',
+          y: 'n',
+          r: 'g',
+          d: 'retro'
+        },
+        true
+      )
 
       user = new User({
         name,

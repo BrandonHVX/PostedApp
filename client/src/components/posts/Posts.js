@@ -14,19 +14,14 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
   return loading ? (
     <Spinner />
   ) : (
-    <Fragment>
-      <h5 className="small text-primary">Posts</h5>
-
-   
-      <div className="posts">
+    <div>
+      <Fragment>
+        <h5 className="small text-primary">Posts</h5> <PostForm />
         {posts.map(post => (
           <PostItem key={post._id} post={post} />
         ))}
-      </div>
-   <PostForm />
-
-
-    </Fragment>
+      </Fragment>
+    </div>
   )
 }
 

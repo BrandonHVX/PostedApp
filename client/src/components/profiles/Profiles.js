@@ -22,7 +22,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
             developers
           </p>
 
-          <div className="d-flex align-content-stretch flex-wrap">
+          <div className="d-flex align-content-center flex-wrap">
             {profiles.length > 0 ? (
               profiles.map(profile => (
                 <ProfileItem key={profile._id} profile={profile} />
